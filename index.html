@@ -1,129 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Krishna Dongala Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Dongala | AI & ML Student</title>
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
 <style>
 
-body{
-font-family:Arial;
-margin:0;
-background:linear-gradient(135deg,#4facfe,#00f2fe);
+:root{
+--orange:#ff9900;
+--blue:#00d4ff;
+--bg:#080c10;
+--card:#121a22;
+--text:#c9d1d9;
 }
 
-header{
-text-align:center;
-padding:40px;
-color:white;
-background:linear-gradient(90deg,#ff7e5f,#feb47b);
+body{
+margin:0;
+font-family:'JetBrains Mono',monospace;
+background:var(--bg);
+color:var(--text);
 }
 
 .container{
-width:80%;
+max-width:1100px;
 margin:auto;
+padding:20px;
+}
+
+nav{
+background:#0e1419;
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:var(--orange);
+margin:0;
+}
+
+.hero{
+padding:80px 0;
+}
+
+.hero h1{
+font-family:'Syne',sans-serif;
+font-size:60px;
+color:white;
+margin-bottom:10px;
+}
+
+.hero span{
+color:var(--orange);
+}
+
+.hero p{
+font-size:18px;
+color:#9aa4af;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:var(--orange);
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+section{
+padding:60px 0;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:20px;
+font-family:'Syne',sans-serif;
+color:white;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
-background:white;
-margin:20px 0;
+background:var(--card);
 padding:20px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+border:1px solid rgba(255,255,255,0.05);
 }
 
-h2{
-color:#333;
-border-left:6px solid #4facfe;
-padding-left:10px;
-}
-
-.skills span{
-display:inline-block;
-background:#4facfe;
+.card h3{
 color:white;
-padding:8px 12px;
-margin:5px;
-border-radius:20px;
+margin-top:0;
 }
 
-.project{
-background:#f9f9f9;
-padding:10px;
-border-left:5px solid #ff7e5f;
-margin:10px 0;
+.skill{
+display:inline-block;
+background:rgba(255,153,0,0.1);
+padding:6px 12px;
+border-radius:5px;
+margin:5px;
+color:var(--orange);
+font-size:13px;
 }
 
 footer{
 text-align:center;
-padding:15px;
-background:#333;
-color:white;
-margin-top:20px;
+padding:20px;
+border-top:1px solid rgba(255,255,255,0.1);
+color:#777;
 }
 
 a{
-color:#ff7e5f;
+color:var(--blue);
 text-decoration:none;
-font-weight:bold;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<header>
-<h1>Krishna Dongala</h1>
-<p>B.Tech | AI & ML Enthusiast</p>
-</header>
+<nav>
+<div class="container">
+<h2>Krishna Dongala</h2>
+</div>
+</nav>
+
+<div class="container hero">
+
+<h1>KRISHNA <span>DONGALA</span></h1>
+
+<p>
+B.Tech Student | AI & ML Enthusiast  
+Building projects in Machine Learning and Web Development
+</p>
+
+<a class="btn" href="https://github.com/">View GitHub</a>
+
+</div>
+
+<section>
 
 <div class="container">
 
+<h2 class="section-title">Skills</h2>
+
 <div class="card">
-<h2>About Me</h2>
+
+<span class="skill">Python</span>
+<span class="skill">C</span>
+<span class="skill">C++</span>
+<span class="skill">SQL</span>
+<span class="skill">Machine Learning</span>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>BudgetWise – AI Expense Tracker</h3>
 <p>
-I am Krishna Dongala, a B.Tech student at Vignan Foundation for Science,
-Technology & Research. I am passionate about Artificial Intelligence,
-Machine Learning, and Web Development.
+AI based system that tracks and analyzes personal expenses.
 </p>
 </div>
 
 <div class="card">
-<h2>Skills</h2>
-<div class="skills">
-<span>C</span>
-<span>C++</span>
-<span>Python</span>
-<span>SQL</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>Machine Learning</span>
-</div>
-</div>
-
-<div class="card">
-<h2>Projects</h2>
-
-<div class="project">
-<h3>BudgetWise – AI Expense Tracker</h3>
-<p>AI based system to track and analyze expenses.</p>
-</div>
-
-<div class="project">
 <h3>Canteen Management Web Application</h3>
-<p>MERN stack application for managing canteen orders.</p>
-</div>
-
-<div class="project">
-<h3>Document Based Question Answering System</h3>
-<p>AI system that answers questions from uploaded documents.</p>
-</div>
-
+<p>
+MERN stack web application for managing canteen orders and payments.
+</p>
 </div>
 
 <div class="card">
-<h2>Contact</h2>
+<h3>Document Based Question Answering System</h3>
+<p>
+AI system that answers questions from uploaded documents.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+I am Krishna Dongala, currently pursuing B.Tech at 
+Vignan Foundation for Science Technology & Research.
+</p>
+
+<p>
+I am passionate about Artificial Intelligence, Machine Learning,
+and building real world applications.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
 
 <p>Email: krishnamrquietcalm1378@gmail.com</p>
 
@@ -140,8 +252,12 @@ View Profile
 
 </div>
 
+</section>
+
 <footer>
-<p>© 2026 Krishna Dongala</p>
+
+© 2026 Krishna Dongala | Portfolio Website
+
 </footer>
 
 </body>
