@@ -8,42 +8,63 @@
 body{
 font-family:Arial;
 margin:0;
-background-color:#f2f2f2;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
 }
 
 header{
-background-color:#2c3e50;
-color:#ffffff;
 text-align:center;
 padding:40px;
+color:white;
+background:linear-gradient(90deg,#ff7e5f,#feb47b);
 }
 
-section{
-background-color:#ffffff;
-margin:20px;
+.container{
+width:80%;
+margin:auto;
+}
+
+.card{
+background:white;
+margin:20px 0;
 padding:20px;
-border-radius:6px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
 h2{
-color:#2c3e50;
+color:#333;
+border-left:6px solid #4facfe;
+padding-left:10px;
 }
 
-ul{
-padding-left:20px;
+.skills span{
+display:inline-block;
+background:#4facfe;
+color:white;
+padding:8px 12px;
+margin:5px;
+border-radius:20px;
+}
+
+.project{
+background:#f9f9f9;
+padding:10px;
+border-left:5px solid #ff7e5f;
+margin:10px 0;
 }
 
 footer{
 text-align:center;
-background-color:#2c3e50;
-color:#ffffff;
 padding:15px;
+background:#333;
+color:white;
 margin-top:20px;
 }
 
 a{
-color:#2980b9;
+color:#ff7e5f;
 text-decoration:none;
+font-weight:bold;
 }
 
 </style>
@@ -54,46 +75,54 @@ text-decoration:none;
 
 <header>
 <h1>Krishna Dongala</h1>
-<p>B.Tech | AI & ML Student</p>
+<p>B.Tech | AI & ML Enthusiast</p>
 </header>
 
-<section>
+<div class="container">
+
+<div class="card">
 <h2>About Me</h2>
 <p>
-I am Krishna Dongala, currently pursuing B.Tech at Vignan Foundation for Science,
-Technology & Research. I am interested in Artificial Intelligence, Machine Learning,
-and Full Stack Development.
+I am Krishna Dongala, a B.Tech student at Vignan Foundation for Science,
+Technology & Research. I am passionate about Artificial Intelligence,
+Machine Learning, and Web Development.
 </p>
-</section>
+</div>
 
-<section>
+<div class="card">
 <h2>Skills</h2>
-<ul>
-<li>C</li>
-<li>C++</li>
-<li>Python</li>
-<li>SQL</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>Machine Learning</li>
-</ul>
-</section>
+<div class="skills">
+<span>C</span>
+<span>C++</span>
+<span>Python</span>
+<span>SQL</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>Machine Learning</span>
+</div>
+</div>
 
-<section>
+<div class="card">
 <h2>Projects</h2>
 
+<div class="project">
 <h3>BudgetWise – AI Expense Tracker</h3>
 <p>AI based system to track and analyze expenses.</p>
+</div>
 
+<div class="project">
 <h3>Canteen Management Web Application</h3>
 <p>MERN stack application for managing canteen orders.</p>
+</div>
 
+<div class="project">
 <h3>Document Based Question Answering System</h3>
-<p>System that answers questions from documents using AI.</p>
+<p>AI system that answers questions from uploaded documents.</p>
+</div>
 
-</section>
+</div>
 
-<section>
+<div class="card">
 <h2>Contact</h2>
 
 <p>Email: krishnamrquietcalm1378@gmail.com</p>
@@ -107,7 +136,9 @@ View Profile
 </a>
 </p>
 
-</section>
+</div>
+
+</div>
 
 <footer>
 <p>© 2026 Krishna Dongala</p>
